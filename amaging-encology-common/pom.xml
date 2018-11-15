@@ -18,7 +18,7 @@
         <jackson_version>2.9.6</jackson_version>
         <fastjson_version>1.2.31</fastjson_version>
         <common_lang3_version>3.1</common_lang3_version>
-        <common_io_version>2.2</common_io_version>
+        <common_io_version>2.4</common_io_version>
         <common_beanutils_version>1.8.3</common_beanutils_version>
         <common_discovery_version>0.2</common_discovery_version>
         <common_logging_version>1.2</common_logging_version>

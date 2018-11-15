@@ -18,6 +18,7 @@
         <module>amaging-encology-spring-cloud</module>
         <module>amaging-encology-spring-boot</module>
         <module>amaging-encology-redis</module>
+        <module>amaging-encology-mybatis</module>
     </modules>
 
 
