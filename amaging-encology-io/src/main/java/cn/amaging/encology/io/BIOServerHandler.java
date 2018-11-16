@@ -50,6 +50,6 @@ public class BIOServerHandler implements Runnable {
 
     private String handle(String message) {
         // handle client message here
-        return "[Server] Hi, i'm server. i received your message.["+ message +"]";
+        return "[Server] Hi, i'm server. i received your message:["+ message +"]";
     }
 }

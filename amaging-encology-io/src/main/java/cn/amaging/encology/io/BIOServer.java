@@ -23,9 +23,10 @@ public class BIOServer {
             server = new ServerSocket();
             server.bind(new InetSocketAddress(port), 128);
             server.setReuseAddress(true);
-            System.out.println("Server is started!");
+            System.out.println("BIO server is started.");
             while (true) {
                 Socket socket = server.accept();
+                // 每个socket都需要启一个线程去处理，造成了资源浪费
                 executor.execute(new BIOServerHandler(socket));
             }
         } catch (Exception e) {
@@ -34,7 +35,7 @@ public class BIOServer {
             if (null != server) {
                 try {
                     server.close();
-                    System.out.println("Server is closed.");
+                    System.out.println("BIO server is stopped.");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
