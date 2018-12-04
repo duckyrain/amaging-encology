@@ -1,4 +1,4 @@
-package cn.amaging.encology.io;
+package cn.amaging.encology.aio;
 
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousSocketChannel;
@@ -41,7 +41,7 @@ public class AIOServerHandler implements CompletionHandler<AsynchronousSocketCha
 
     @Override
     public void failed(Throwable exc, Object attachment) {
-
+        exc.printStackTrace();
     }
 
     private String handle(String message) {

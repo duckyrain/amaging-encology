@@ -1,4 +1,4 @@
-package cn.amaging.encology.io;
+package cn.amaging.encology.bio;
 
 
 import org.apache.commons.io.IOUtils;

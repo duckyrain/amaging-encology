@@ -1,4 +1,4 @@
-package cn.amaging.encology.io;
+package cn.amaging.encology.nio;
 
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;

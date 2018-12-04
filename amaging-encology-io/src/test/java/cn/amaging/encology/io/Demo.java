@@ -1,8 +1,13 @@
 package cn.amaging.encology.io;
 
+import cn.amaging.encology.aio.AIOServer;
+import cn.amaging.encology.bio.BIOClient;
+import cn.amaging.encology.bio.BIOServer;
+import cn.amaging.encology.netty.NettyClient;
+import cn.amaging.encology.netty.NettyServer;
+import cn.amaging.encology.nio.NIOClient;
+import cn.amaging.encology.nio.NIOServer;
 import org.junit.Test;
-
-import java.io.IOException;
 
 /**
  * Created by DuQiyu on 2018/11/15 14:33.
@@ -36,11 +41,23 @@ public class Demo {
 
     @Test
     public void AIODemo() {
+        try {
+            new Thread(() -> new AIOServer().listen(9529)).start();
+            Thread.sleep(1000L);
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
     public void NettyDemo() {
-
+        try {
+            new Thread(() -> new NettyServer().listen(9530)).start();
+            Thread.sleep(1000L);
+            new NettyClient("127.0.0.1", 9530).send("[Client] hello netty.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

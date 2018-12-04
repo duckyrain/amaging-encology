@@ -16,6 +16,11 @@
             <artifactId>amaging-encology-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.30.Final</version>
+        </dependency>
     </dependencies>
 
 
