@@ -1,5 +1,6 @@
 package cn.amaging.encology.util;
 
+import cn.amaging.encology.util.httpclient.CONTENT_TYPE;
 import cn.amaging.encology.util.httpclient.HttpResult;
 import org.apache.http.*;
 import org.apache.http.client.config.RequestConfig;
@@ -95,18 +96,6 @@ public class HttpClientUtil {
     // HTTP Method
     enum METHOD {
         GET, POST, PUT, PATCH, DELETE
-    }
-
-    // Body content type
-    enum CONTENT_TYPE {
-        FORM_DATA,
-        X_WWW_FORM_URLENCODED,
-        TEXT_PLAIN,
-        APPLICATION_JSON,
-        APPLICATION_JAVASCRIPT,
-        APPLICATION_XML,
-        TEXT_XML,
-        TEXT_HTML
     }
 
     private static final String FORM_DATA_TYPE = "multipart/form-data";
