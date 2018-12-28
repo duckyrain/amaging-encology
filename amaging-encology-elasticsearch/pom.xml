@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>amaging-encology-elasticsearch</artifactId>
+
     <dependencyManagement>
         <dependencies>
             <dependency>

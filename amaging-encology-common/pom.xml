@@ -19,11 +19,7 @@
         <fastjson_version>1.2.31</fastjson_version>
         <common_lang3_version>3.1</common_lang3_version>
         <common_io_version>2.4</common_io_version>
-        <common_beanutils_version>1.8.3</common_beanutils_version>
-        <common_discovery_version>0.2</common_discovery_version>
-        <common_logging_version>1.2</common_logging_version>
         <common_net_version>3.2</common_net_version>
-        <common_httpclient_version>3.1</common_httpclient_version>
         <httpclient_version>4.5.2</httpclient_version>
         <slf4j_version>1.7.25</slf4j_version>
     </properties>
@@ -33,11 +29,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring_version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -75,21 +66,6 @@
             <version>${common_io_version}</version>
         </dependency>
         <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>${common_beanutils_version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-discovery</groupId>
-            <artifactId>commons-discovery</artifactId>
-            <version>${common_discovery_version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-            <version>${common_logging_version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${httpclient_version}</version>
@@ -104,20 +80,10 @@
             <artifactId>commons-net</artifactId>
             <version>${common_net_version}</version>
         </dependency>
-        <dependency>
-            <groupId>commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-            <version>${common_httpclient_version}</version>
-        </dependency>
         <!-- apache common end -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>${slf4j_version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j_version}</version>
         </dependency>
     </dependencies>
