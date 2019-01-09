@@ -1,4 +1,4 @@
-package cn.amaging.encology.util.exception;
+package cn.amaging.encology.common.util.exception;
 
 /**
  * Created by DuQiyu on 2018/10/24 16:42.

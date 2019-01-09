@@ -1,4 +1,4 @@
-package cn.amaging.encology.util.mail;
+package cn.amaging.encology.common.util.mail;
 
 import javax.mail.Authenticator;
 import java.util.Arrays;

@@ -1,7 +1,7 @@
-package cn.amaging.encology.util;
+package cn.amaging.encology.common.util;
 
-import cn.amaging.encology.util.httpclient.CONTENT_TYPE;
-import cn.amaging.encology.util.httpclient.HttpResult;
+import cn.amaging.encology.common.util.httpclient.CONTENT_TYPE;
+import cn.amaging.encology.common.util.httpclient.HttpResult;
 import org.apache.http.*;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;

@@ -1,6 +1,6 @@
-package cn.amaging.encology.util;
+package cn.amaging.encology.common.util;
 
-import cn.amaging.encology.util.exception.XmlException;
+import cn.amaging.encology.common.util.exception.XmlException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

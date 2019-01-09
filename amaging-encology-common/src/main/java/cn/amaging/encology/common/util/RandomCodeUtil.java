@@ -1,4 +1,4 @@
-package cn.amaging.encology.util;
+package cn.amaging.encology.common.util;
 
 import org.apache.commons.lang3.StringUtils;
 

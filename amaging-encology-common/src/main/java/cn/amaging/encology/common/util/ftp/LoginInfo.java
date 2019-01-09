@@ -1,4 +1,4 @@
-package cn.amaging.encology.util.ftp;
+package cn.amaging.encology.common.util.ftp;
 
 /**
  * Created by DuQiyu on 2018/10/24 17:28.

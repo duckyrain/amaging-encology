@@ -1,4 +1,4 @@
-package cn.amaging.encology.util.httpclient;
+package cn.amaging.encology.common.util.httpclient;
 
 /**
  * Created by DuQiyu on 2018/12/26 10:34.

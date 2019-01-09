@@ -1,6 +1,6 @@
-package cn.amaging.encology.util;
+package cn.amaging.encology.common.util;
 
-import cn.amaging.encology.util.mail.MailInfo;
+import cn.amaging.encology.common.util.mail.MailInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

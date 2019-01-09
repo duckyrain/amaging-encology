@@ -1,7 +1,7 @@
-package cn.amaging.encology.util;
+package cn.amaging.encology.common.util;
 
-import cn.amaging.encology.util.ftp.FileInfo;
-import cn.amaging.encology.util.ftp.LoginInfo;
+import cn.amaging.encology.common.util.ftp.FileInfo;
+import cn.amaging.encology.common.util.ftp.LoginInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;

@@ -1,6 +1,6 @@
-package cn.amaging.encology.util;
+package cn.amaging.encology.common.util;
 
-import cn.amaging.encology.util.result.Result;
+import cn.amaging.encology.common.util.result.Result;
 import com.alibaba.fastjson.JSON;
 
 import java.util.Date;

@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring_version>5.0.8.RELEASE</spring_version>
         <mail_version>1.4.1</mail_version>
-        <jackson_version>2.9.6</jackson_version>
+        <jackson_version>2.9.8</jackson_version>
         <fastjson_version>1.2.31</fastjson_version>
         <common_lang3_version>3.1</common_lang3_version>
         <common_io_version>2.4</common_io_version>
@@ -25,11 +25,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>

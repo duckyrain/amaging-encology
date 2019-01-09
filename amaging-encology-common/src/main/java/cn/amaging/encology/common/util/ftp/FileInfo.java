@@ -1,4 +1,4 @@
-package cn.amaging.encology.util.ftp;
+package cn.amaging.encology.common.util.ftp;
 
 import java.util.Arrays;
 

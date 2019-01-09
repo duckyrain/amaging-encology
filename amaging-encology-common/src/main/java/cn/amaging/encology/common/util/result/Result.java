@@ -1,4 +1,4 @@
-package cn.amaging.encology.util.result;
+package cn.amaging.encology.common.util.result;
 
 /**
  * Created by DuQiyu on 2018/12/18 15:03.
