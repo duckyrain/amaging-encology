@@ -11,7 +11,7 @@ public class Result {
 
     private String message;
 
-    private Long timestamp;
+    private long timestamp;
 
     public Result() {
     }
@@ -45,11 +45,11 @@ public class Result {
         this.message = message;
     }
 
-    public Long getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(Long timestamp) {
+    public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
 

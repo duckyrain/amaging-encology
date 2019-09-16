@@ -53,10 +53,10 @@ public class HttpClientUtil {
     @Value("${httpclient.socketTimeout:5000}")
     private int socketTimeout;
 
-    @Value("${httpclient.maxConnPerRoute:100}")
+    @Value("${httpclient.maxConnPerRoute:1000}")
     private int maxConnPerRoute;
 
-    @Value("${httpclient.maxConnTotal:1000}")
+    @Value("${httpclient.maxConnTotal:20000}")
     private int maxConnTotal;
 
     @Value("${httpclient.connectionTimeToLive:30}")

@@ -1,7 +1,8 @@
 package cn.amaging.encology.common.util;
 
 import cn.amaging.encology.common.util.result.Result;
-import com.alibaba.fastjson.JSON;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Date;
 
@@ -11,6 +12,8 @@ import java.util.Date;
  */
 public class ResultUtil {
 
+    private static final Logger logger = LoggerFactory.getLogger(FtpUtil.class);
+
     public static String result(String code, String message) {
         return result(code, null, message);
     }
@@ -19,6 +22,6 @@ public class ResultUtil {
         Result result = new Result(code, message);
         result.setData(data);
         result.setTimestamp(new Date().getTime());
-        return JSON.toJSONString(result);
+        return JsonUtil.toJsonString(result);
     }
 }
