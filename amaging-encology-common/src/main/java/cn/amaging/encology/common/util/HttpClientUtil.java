@@ -252,12 +252,12 @@ public class HttpClientUtil {
     }
 
     /**
-     * @param method
-     * @param contentType
+     * @param method {@link METHOD}
+     * @param contentType {@link CONTENT_TYPE}
      * @param headers
      * @param body
      * @param bodyAsString
-     * @param charset
+     * @param charset default is UTF_8
      * @return HttpResult
      */
     private static HttpResult request(METHOD method, String uri, CONTENT_TYPE contentType, Map<String, String> headers,
@@ -270,12 +270,14 @@ public class HttpClientUtil {
         HttpRequestBase request = httpRequest(method, uri, contentType, headers, body, bodyAsString, charset);
         CloseableHttpResponse response = null;
         try {
+            long startTime = System.currentTimeMillis();
             response = closeableHttpClient.execute(request);
+            long endTime = System.currentTimeMillis();
             int status = response.getStatusLine().getStatusCode();
             String content = EntityUtils.toString(response.getEntity(), charset);
-            logger.debug(logFormat(uri, headers, body, bodyAsString, status, content));
+            logger.debug(logFormat(uri, headers, body, bodyAsString, status, content, endTime - startTime));
             if (status < HttpStatus.SC_OK || status >= HttpStatus.SC_BAD_REQUEST) {
-                logger.error("HTTP exception, status:{}, content:{}", status, content);
+                logger.error("HTTP exception, status:{}, content:{}, elapsed:{}ms", status, content, endTime - startTime);
             }
             result = new HttpResult(status, content);
         } catch (Exception e) {
@@ -385,7 +387,7 @@ public class HttpClientUtil {
      * 格式化输出请求参数和响应结果
      * */
     private static String logFormat(String uri, Map<String, String> headers, Map<String, String> body,
-                                    String bodyAsString, int status, String content) {
+                                    String bodyAsString, int status, String content, long elapsed) {
         StringBuilder headerSb = new StringBuilder();
         if (null != headers) {
             for (Map.Entry<String, String> entry : headers.entrySet()) {
@@ -401,13 +403,13 @@ public class HttpClientUtil {
                     //noinspection ConstantConditions
                     bodySb.append(entry.getKey()).append("=").append(entry.getValue()).append("&");
                 }
-                bodySb.deleteCharAt(headerSb.length() - 1);
+                bodySb.deleteCharAt(bodySb.length() - 1);
                 bodyAsString = bodySb.toString();
             }
         }
-        return String.format("uri:%s, header:%s, body:%s, status:%d, content:%s", uri, headerSb.toString(), bodyAsString, status, content);
+        return String.format("uri:%s, header:%s, body:%s, status:%d, content:%s, elapsed:%sms", uri, headerSb.toString(),
+                bodyAsString, status, content, elapsed);
     }
-
 }
 
 
