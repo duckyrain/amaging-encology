@@ -19,6 +19,7 @@
         <module>amaging-encology-spring-boot</module>
         <module>amaging-encology-redis</module>
         <module>amaging-encology-mybatis</module>
+        <module>amaging-encology-spring-boot-starter</module>
     </modules>
 
     <dependencies>
